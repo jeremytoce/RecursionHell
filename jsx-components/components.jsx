@@ -22,6 +22,9 @@ var RecursionProblem = React.createClass({
         {this.props.problem.example}
         </div>
       </div>
+      <div className={ "solution " + ((this.state.show) ? 'show': 'hidden' )}>
+        {this.props.problem.answer}
+      </div>
       <button onClick={self.showAnswer}>Show Solution</button>
     </div>
     );
@@ -30,11 +33,12 @@ var RecursionProblem = React.createClass({
 
 var RecursionProblems = React.createClass({
   render: function (){
+    var random_problem = Math.round(Math.random()*(this.props.problems.length - 1));
+    console.log(random_problem);
+
     return (
     <div className="problems">
-      {this.props.problems.map(function (problem){
-        return <RecursionProblem problem={problem} />
-      })}
+      <RecursionProblem problem={this.props.problems[random_problem]} />    
     </div>
     );
   }
