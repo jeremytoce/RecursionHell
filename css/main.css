@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background-color: #E1F5FE;
+  color: #000; }
+
+.page {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+  .page::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .page .content .problem .description {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    .page .content .problem .description:last-child {
+      margin-right: 0; }
+  .page .content .problem .problem-code-examples {
+    margin: 2em 0; }
+    .page .content .problem .problem-code-examples .problem-box {
+      font-family: monospace;
+      padding: 1em;
+      border: solid 1px #81D4FA; }
+    .page .content .problem .problem-code-examples .problem-code {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .page .content .problem .problem-code-examples .problem-code:last-child {
+        margin-right: 0; }
+    .page .content .problem .problem-code-examples .problem-examples {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .page .content .problem .problem-code-examples .problem-examples:last-child {
+        margin-right: 0; }

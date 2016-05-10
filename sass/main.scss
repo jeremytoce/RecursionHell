@@ -1,0 +1,45 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+
+$blue-50: #E1F5FE;
+$blue-200: #81D4FA;
+$blue-500: #03A9F4;
+
+body {
+  background-color: $blue-50;
+  color: #000;
+}
+
+
+
+.page {
+  @include outer-container(70%);
+
+  .content {
+    .problem {
+      .description {
+        @include shift(1);
+        @include span-columns(10);
+      }
+
+      .problem-code-examples {
+        margin: 2em 0;
+
+        .problem-box {
+          font-family: monospace;
+          padding: 1em;
+          border: solid 1px $blue-200;
+        }
+
+        .problem-code {
+          @include span-columns(6);
+        }
+
+        .problem-examples {
+          @include span-columns(6);
+        }
+      }
+    }
+  }
+}
