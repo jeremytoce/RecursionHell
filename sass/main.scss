@@ -59,11 +59,21 @@ body {
     .solution {
       @include span-columns(12);
 
-      .show {
+      margin-top: 1em;
+      font-family: monospace;
+      padding: 1em;
+      border: solid 1px $blue-200;
+
+      pre {
+        font-size: 1em;
+      }  
+      background-color: #fff;    
+
+      &.show {
         display: block;
       }
 
-      .hidden {
+      &.hidden {
         display: none;
       }
     }

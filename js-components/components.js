@@ -41,7 +41,11 @@ var RecursionProblem = React.createClass({
       React.createElement(
         "div",
         { className: "solution " + (this.state.show ? 'show' : 'hidden') },
-        this.props.problem.answer
+        React.createElement(
+          "pre",
+          null,
+          this.props.problem.answer
+        )
       ),
       React.createElement(
         "button",

@@ -23,7 +23,7 @@ var RecursionProblem = React.createClass({
         </div>
       </div>
       <div className={ "solution " + ((this.state.show) ? 'show': 'hidden' )}>
-        {this.props.problem.answer}
+        <pre>{this.props.problem.answer}</pre>
       </div>
       <button onClick={self.showAnswer}>Show Solution</button>
     </div>

@@ -63,10 +63,17 @@ body {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    margin-top: 1em;
+    font-family: monospace;
+    padding: 1em;
+    border: solid 1px #81D4FA;
+    background-color: #fff; }
     .page .content .solution:last-child {
       margin-right: 0; }
-    .page .content .solution .show {
+    .page .content .solution pre {
+      font-size: 1em; }
+    .page .content .solution.show {
       display: block; }
-    .page .content .solution .hidden {
+    .page .content .solution.hidden {
       display: none; }
