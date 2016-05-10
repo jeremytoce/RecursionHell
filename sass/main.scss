@@ -22,6 +22,8 @@ body {
       .description {
         @include shift(1);
         @include span-columns(10);
+
+        margin-bottom: 2em;
       }
 
       .problem-code-examples {
@@ -56,14 +58,15 @@ body {
 
     .solution {
       @include span-columns(12);
+
+      .show {
+        display: block;
+      }
+
+      .hidden {
+        display: none;
+      }
     }
   }
 }
 
-.show {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}

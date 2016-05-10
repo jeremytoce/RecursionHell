@@ -1,6 +1,6 @@
 var RecursionProblem = React.createClass({
   getInitialState: function (){
-    return { answer: '', show: false };
+    return { show: false };
   },
   handleChange: function (event){
   },

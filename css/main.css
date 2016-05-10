@@ -21,7 +21,8 @@ body {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%; }
+    width: 82.94039%;
+    margin-bottom: 2em; }
     .page .content .problem .description:last-child {
       margin-right: 0; }
   .page .content .problem .problem-code-examples {
@@ -65,9 +66,7 @@ body {
     width: 100%; }
     .page .content .solution:last-child {
       margin-right: 0; }
-
-.show {
-  display: block; }
-
-.hidden {
-  display: none; }
+    .page .content .solution .show {
+      display: block; }
+    .page .content .solution .hidden {
+      display: none; }

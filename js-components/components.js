@@ -2,7 +2,7 @@ var RecursionProblem = React.createClass({
   displayName: "RecursionProblem",
 
   getInitialState: function () {
-    return { answer: '', show: false };
+    return { show: false };
   },
   handleChange: function (event) {},
   showAnswer: function (event) {

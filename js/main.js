@@ -2,19 +2,19 @@ var problem_data = [{
   name: 'Palindrome Detection',
   description: 'Eliminate consecutive duplicates in a list. If the list contains repeated elements they should be replace with a single copy of the element. The order of the elements cannot be changed.',
   code: 'function palindrome(str){}',
-  example: 'palindrome(''rotor'') ==> true',
+  example: 'palindrome(\'\'rotor\'\') ==> true',
   answer: 
-  'function palindrome(str) {
-  if (str <= 1) {
-    return true;
-  }
-  else {
-    if (str.charAt(0) === str.charAt(str.length-1)) {
-      return palindrome(str.slice(1).slice(0,-1))
-    }
-    else {
-      return false;
-    }
+  'function palindrome(str) {' +
+  'if (str <= 1) {' +
+    'return true;' +
+  '}' +
+  'else {' +
+    'if (str.charAt(0) === str.charAt(str.length-1)) {' +
+      'return palindrome(str.slice(1).slice(0,-1))' +
+    '}' +
+    'else {' +
+      'return false;' +
+    '}'
   }
 }'},
 
@@ -38,14 +38,13 @@ var problem_data = [{
   description: 'Write a function that recursively reverses a string.',
   code: 'function stringReverse(str){}',
   example: 'testing -> gnitset',
-  answer: 
-  'function stringReverse(str) {
-  if (str.length === 1) {
-    return str;
-  }
-  else {
-    return stringReverse(str.slice(1)) + str.charAt(0);
-  }
+  answer: 'function stringReverse(str) {' +
+  'if (str.length === 1) {' +
+    'return str;' +
+  '}' +
+  'else {' +
+    'return stringReverse(str.slice(1)) + str.charAt(0);' +
+  '}'
 }'}, 
 
   {
